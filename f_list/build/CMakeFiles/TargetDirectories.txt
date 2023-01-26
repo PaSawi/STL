@@ -1,0 +1,3 @@
+/home/patryks/Workplace/004_STL/f_list/build/CMakeFiles/f_list.dir
+/home/patryks/Workplace/004_STL/f_list/build/CMakeFiles/edit_cache.dir
+/home/patryks/Workplace/004_STL/f_list/build/CMakeFiles/rebuild_cache.dir
