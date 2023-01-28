@@ -1,0 +1,3 @@
+/home/patryks/Workspace/STL/deque/build/CMakeFiles/deque.dir
+/home/patryks/Workspace/STL/deque/build/CMakeFiles/edit_cache.dir
+/home/patryks/Workspace/STL/deque/build/CMakeFiles/rebuild_cache.dir

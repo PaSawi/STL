@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/deque.dir/deque.cpp.o -o deque 
