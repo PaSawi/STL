@@ -1,0 +1,3 @@
+/home/patryks/Workspace/STL/exercises/01_array/build/CMakeFiles/array.dir
+/home/patryks/Workspace/STL/exercises/01_array/build/CMakeFiles/edit_cache.dir
+/home/patryks/Workspace/STL/exercises/01_array/build/CMakeFiles/rebuild_cache.dir
