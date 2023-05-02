@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/ls.dir/ls.cpp.o -o ls 

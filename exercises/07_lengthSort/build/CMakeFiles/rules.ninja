@@ -6,7 +6,7 @@
 # It is included in the main 'build.ninja'.
 
 # =============================================================================
-# Project: vector
+# Project: ls
 # Configurations: Debug
 # =============================================================================
 # =============================================================================
@@ -14,7 +14,7 @@
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__vector_Debug
+rule CXX_COMPILER__ls_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/g++-10 $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -24,7 +24,7 @@ rule CXX_COMPILER__vector_Debug
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__vector_Debug
+rule CXX_EXECUTABLE_LINKER__ls_Debug
   command = $PRE_LINK && /usr/bin/g++-10 $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -42,7 +42,7 @@ rule CUSTOM_COMMAND
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = /usr/bin/cmake --regenerate-during-build -S/home/patryks/Workspace/STL/exercises/03_vector -B/home/patryks/Workspace/STL/exercises/build
+  command = /usr/bin/cmake --regenerate-during-build -S/home/patryks/Workspace/STL/exercises/07_lengthSort -B/home/patryks/Workspace/STL/exercises/07_lengthSort/build
   description = Re-running CMake...
   generator = 1
 

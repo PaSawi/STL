@@ -1,0 +1,3 @@
+/home/patryks/Workspace/STL/exercises/07_lengthSort/build/CMakeFiles/ls.dir
+/home/patryks/Workspace/STL/exercises/07_lengthSort/build/CMakeFiles/edit_cache.dir
+/home/patryks/Workspace/STL/exercises/07_lengthSort/build/CMakeFiles/rebuild_cache.dir

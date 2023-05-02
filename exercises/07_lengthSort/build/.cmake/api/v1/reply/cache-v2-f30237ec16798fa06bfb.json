@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/patryks/Workspace/STL/exercises/build"
+			"value" : "/home/patryks/Workspace/STL/exercises/07_lengthSort/build"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -575,7 +575,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/patryks/Workspace/STL/exercises/03_vector"
+			"value" : "/home/patryks/Workspace/STL/exercises/07_lengthSort"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -819,7 +819,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "vector"
+			"value" : "ls"
 		},
 		{
 			"name" : "CMAKE_RANLIB",
@@ -1102,7 +1102,7 @@
 			"value" : "FALSE"
 		},
 		{
-			"name" : "vector_BINARY_DIR",
+			"name" : "ls_BINARY_DIR",
 			"properties" : 
 			[
 				{
@@ -1111,10 +1111,10 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/patryks/Workspace/STL/exercises/build"
+			"value" : "/home/patryks/Workspace/STL/exercises/07_lengthSort/build"
 		},
 		{
-			"name" : "vector_IS_TOP_LEVEL",
+			"name" : "ls_IS_TOP_LEVEL",
 			"properties" : 
 			[
 				{
@@ -1126,7 +1126,7 @@
 			"value" : "ON"
 		},
 		{
-			"name" : "vector_SOURCE_DIR",
+			"name" : "ls_SOURCE_DIR",
 			"properties" : 
 			[
 				{
@@ -1135,7 +1135,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/patryks/Workspace/STL/exercises/03_vector"
+			"value" : "/home/patryks/Workspace/STL/exercises/07_lengthSort"
 		}
 	],
 	"kind" : "cache",

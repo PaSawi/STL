@@ -1,4 +1,4 @@
-# Install script for directory: /home/patryks/Workspace/STL/exercises/03_vector
+# Install script for directory: /home/patryks/Workspace/STL/exercises/07_lengthSort
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/patryks/Workspace/STL/exercises/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/patryks/Workspace/STL/exercises/07_lengthSort/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
