@@ -1,0 +1,3 @@
+/home/patryks/Workspace/STL/exercises/05_map/build/CMakeFiles/map.dir
+/home/patryks/Workspace/STL/exercises/05_map/build/CMakeFiles/edit_cache.dir
+/home/patryks/Workspace/STL/exercises/05_map/build/CMakeFiles/rebuild_cache.dir

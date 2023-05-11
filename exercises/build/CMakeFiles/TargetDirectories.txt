@@ -1,0 +1,3 @@
+/home/patryks/Workspace/STL/exercises/build/CMakeFiles/vector.dir
+/home/patryks/Workspace/STL/exercises/build/CMakeFiles/edit_cache.dir
+/home/patryks/Workspace/STL/exercises/build/CMakeFiles/rebuild_cache.dir
