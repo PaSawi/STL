@@ -1,7 +1,0 @@
-[
-{
-  "directory": "/home/patryks/Workspace/STL/exercises/build",
-  "command": "/usr/bin/g++-10 -g -Wall -Wextra -Werror -pedantic -Wconversion -O3 -o CMakeFiles/vector.dir/vector.cpp.o -c /home/patryks/Workspace/STL/exercises/03_vector/vector.cpp",
-  "file": "/home/patryks/Workspace/STL/exercises/03_vector/vector.cpp"
-}
-]
