@@ -7,6 +7,7 @@
 #include <vector>
 
 #include "middle.cpp"
+#include "middle2.cpp"
 #include "printCollection.cpp"
 /*
 template <typename Iter>
@@ -50,17 +51,19 @@ int main()
     std:: cout << printMiddle(v) <<" ";
     std::cout<<'\n';
 
-    // std::cout<< printMiddle(a.begin(),  a.end()) << " ";
-    // std::cout<< printMiddle(d.begin(),  d.end()) << " ";
-    // std::cout<< printMiddle(fl.begin(), fl.end())<< " ";
-    // std::cout<< printMiddle(l.begin(),  l.end()) << " ";
-    // std::cout << printMiddle(v.begin(), v.end()) << " ";
+    std::cout<< "printMiddle2\n";  
+    std::cout<< printMiddle2(a.begin(),  a.end()) << " ";
+    std::cout<< printMiddle2(d.begin(),  d.end()) << " ";
+    std::cout<< printMiddle2(fl.begin(), fl.end())<< " ";
+    std::cout<< printMiddle2(l.begin(),  l.end()) << " ";
+    std::cout << printMiddle2(v.begin(), v.end()) << " ";
     
+    /*
     std::cout<<'\n';
     printCollection(a);
     printCollection(d);
     printCollection(fl);
     printCollection(l);
-    printCollection(v);
+    printCollection(v);*/
     std::cout << "TEH END\n";
 }
