@@ -16,4 +16,9 @@ int main()
         std::cout << "The claim that there all elements in the container are greater than 1 is TRUE\n";
     else
         std::cout << "The claim that there all elements in the container are greater than 1 is FALSE\n";
+    //new c++20 with ranges
+    std::cout << std::boolalpha << std::ranges::any_of(v, [](int i) { return i < 1; });
+    std::cout << std::boolalpha << std::ranges::all_of(v, [](int i) { return i > 1; });
 }
+
+//std::boolalpha << std:: - displays TRUE and FALSE except 1 i 0
