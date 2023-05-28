@@ -1,7 +1,0 @@
-[
-{
-  "directory": "/home/patryks/Workspace/STL/exercises/07_lengthSort/build",
-  "command": "/usr/bin/g++-10 -g -o CMakeFiles/ls.dir/ls.cpp.o -c /home/patryks/Workspace/STL/exercises/07_lengthSort/ls.cpp",
-  "file": "/home/patryks/Workspace/STL/exercises/07_lengthSort/ls.cpp"
-}
-]
