@@ -1,4 +1,6 @@
 
+// funkcja ma zwracać pierwszą znalezioną pasującą parę w postaci vektora <int> zawierającego trzy liczby: 
+// dwie pierwsze to indeksy z vektora dwóch pasujących stringów, a trzecia to pasująca pozycja  indeksu w tych stringach. 
 #include <iostream>
 #include <string>
 #include <vector>
