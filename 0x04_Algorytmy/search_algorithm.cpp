@@ -52,7 +52,7 @@ int main()
         std::cout << *it <<'\n';
     }
 
-    auto found = std::ranges::search(v, {6,6});
+    auto found = std::ranges::search(v, std::vector{6,6});
     if(!found.empty()){
         for (const auto el :found) {
             std::cout << el;
