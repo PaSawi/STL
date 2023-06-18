@@ -26,11 +26,11 @@ auto printMiddle(std::forward_list<std::string>::iterator first, std::forward_li
    auto middle = first;
    bool even = false;
    while(first != last) {
-    first++;
-    if (even){
-        middle++;
-    }
-    even = !even;
+      first++;
+      if (even){
+         middle++;
+      }
+      even = !even;
    }
    return *middle;
 }

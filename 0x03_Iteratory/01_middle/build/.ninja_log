@@ -1,8 +1,4 @@
 # ninja log v5
-11	557	7064469846167488	CMakeFiles/middle.dir/middle.cpp.obj	5c5bc14cde63bd24
-9	600	7064437416514989	CMakeFiles/middle.dir/printCollection.cpp.obj	cd09024d35721346
-7	746	7064470121037825	CMakeFiles/middle.dir/main.cpp.obj	b3b255e0c682ae5
-728	935	7064463999677576	middle.exe	dcec02b20a6fbc20
-10	647	7064472156459232	CMakeFiles/middle.dir/printCollection.cpp.obj	4bea0f3d4bdfae89
 8	693	7064472156899256	CMakeFiles/middle.dir/middle.cpp.obj	2a45440289113cc3
+10	647	7064472156459232	CMakeFiles/middle.dir/printCollection.cpp.obj	4bea0f3d4bdfae89
 5	1036	7064472160189308	CMakeFiles/middle.dir/main.cpp.obj	6be7522183748171

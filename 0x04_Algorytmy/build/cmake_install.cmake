@@ -1,4 +1,4 @@
-# Install script for directory: /home/patryks/Workspace/STL/0x03_Iteratory/01_middle
+# Install script for directory: /home/patryks/Workspace/STL/0x04_Algorytmy
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/patryks/Workspace/STL/0x03_Iteratory/01_middle/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/patryks/Workspace/STL/0x04_Algorytmy/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

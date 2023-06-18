@@ -4,38 +4,38 @@
 		"generator" : 
 		{
 			"multiConfig" : false,
-			"name" : "MinGW Makefiles"
+			"name" : "Ninja"
 		},
 		"paths" : 
 		{
-			"cmake" : "C:/msys64/mingw64/bin/cmake.exe",
-			"cpack" : "C:/msys64/mingw64/bin/cpack.exe",
-			"ctest" : "C:/msys64/mingw64/bin/ctest.exe",
-			"root" : "C:/msys64/mingw64/share/cmake"
+			"cmake" : "/usr/bin/cmake",
+			"cpack" : "/usr/bin/cpack",
+			"ctest" : "/usr/bin/ctest",
+			"root" : "/usr/share/cmake-3.22"
 		},
 		"version" : 
 		{
 			"isDirty" : false,
 			"major" : 3,
-			"minor" : 26,
-			"patch" : 2,
-			"string" : "3.26.2",
+			"minor" : 22,
+			"patch" : 1,
+			"string" : "3.22.1",
 			"suffix" : ""
 		}
 	},
 	"objects" : 
 	[
 		{
-			"jsonFile" : "codemodel-v2-c0d2d3e582f07d9c8d67.json",
+			"jsonFile" : "codemodel-v2-4568ce7dd89a865c83a6.json",
 			"kind" : "codemodel",
 			"version" : 
 			{
 				"major" : 2,
-				"minor" : 5
+				"minor" : 3
 			}
 		},
 		{
-			"jsonFile" : "cache-v2-7e57dda3854fba337c66.json",
+			"jsonFile" : "cache-v2-1e59bd1c0b3c88e69366.json",
 			"kind" : "cache",
 			"version" : 
 			{
@@ -44,7 +44,7 @@
 			}
 		},
 		{
-			"jsonFile" : "cmakeFiles-v1-7171f95b4c58484e00ce.json",
+			"jsonFile" : "cmakeFiles-v1-9dd00e9d7db684ef9d15.json",
 			"kind" : "cmakeFiles",
 			"version" : 
 			{
@@ -53,7 +53,7 @@
 			}
 		},
 		{
-			"jsonFile" : "toolchains-v1-754e0fc8575f63e75ef2.json",
+			"jsonFile" : "toolchains-v1-5162ca28b2d656a75295.json",
 			"kind" : "toolchains",
 			"version" : 
 			{
@@ -64,39 +64,6 @@
 	],
 	"reply" : 
 	{
-		"client-integration-vscode" : 
-		{
-			"cache-v2" : 
-			{
-				"jsonFile" : "cache-v2-7e57dda3854fba337c66.json",
-				"kind" : "cache",
-				"version" : 
-				{
-					"major" : 2,
-					"minor" : 0
-				}
-			},
-			"cmakeFiles-v1" : 
-			{
-				"jsonFile" : "cmakeFiles-v1-7171f95b4c58484e00ce.json",
-				"kind" : "cmakeFiles",
-				"version" : 
-				{
-					"major" : 1,
-					"minor" : 0
-				}
-			},
-			"codemodel-v2" : 
-			{
-				"jsonFile" : "codemodel-v2-c0d2d3e582f07d9c8d67.json",
-				"kind" : "codemodel",
-				"version" : 
-				{
-					"major" : 2,
-					"minor" : 5
-				}
-			}
-		},
 		"client-vscode" : 
 		{
 			"query.json" : 
@@ -123,7 +90,7 @@
 				"responses" : 
 				[
 					{
-						"jsonFile" : "cache-v2-7e57dda3854fba337c66.json",
+						"jsonFile" : "cache-v2-1e59bd1c0b3c88e69366.json",
 						"kind" : "cache",
 						"version" : 
 						{
@@ -132,16 +99,16 @@
 						}
 					},
 					{
-						"jsonFile" : "codemodel-v2-c0d2d3e582f07d9c8d67.json",
+						"jsonFile" : "codemodel-v2-4568ce7dd89a865c83a6.json",
 						"kind" : "codemodel",
 						"version" : 
 						{
 							"major" : 2,
-							"minor" : 5
+							"minor" : 3
 						}
 					},
 					{
-						"jsonFile" : "toolchains-v1-754e0fc8575f63e75ef2.json",
+						"jsonFile" : "toolchains-v1-5162ca28b2d656a75295.json",
 						"kind" : "toolchains",
 						"version" : 
 						{
@@ -150,7 +117,7 @@
 						}
 					},
 					{
-						"jsonFile" : "cmakeFiles-v1-7171f95b4c58484e00ce.json",
+						"jsonFile" : "cmakeFiles-v1-9dd00e9d7db684ef9d15.json",
 						"kind" : "cmakeFiles",
 						"version" : 
 						{

@@ -11,7 +11,7 @@
 # =============================================================================
 
 # =============================================================================
-# Project: Middle
+# Project: found
 # Configurations: Debug
 # =============================================================================
 
@@ -39,62 +39,44 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = /home/patryks/Workspace/STL/0x03_Iteratory/01_middle/build/
+cmake_ninja_workdir = /home/patryks/Workspace/STL/0x04_Algorytmy/build/
 # =============================================================================
-# Object build statements for EXECUTABLE target Middle
+# Object build statements for EXECUTABLE target found
 
 
 #############################################
-# Order-only phony target for Middle
+# Order-only phony target for found
 
-build cmake_object_order_depends_target_Middle: phony || CMakeFiles/Middle.dir
+build cmake_object_order_depends_target_found: phony || CMakeFiles/found.dir
 
-build CMakeFiles/Middle.dir/main.cpp.o: CXX_COMPILER__Middle_Debug /home/patryks/Workspace/STL/0x03_Iteratory/01_middle/main.cpp || cmake_object_order_depends_target_Middle
-  DEP_FILE = CMakeFiles/Middle.dir/main.cpp.o.d
+build CMakeFiles/found.dir/search_algorithm.cpp.o: CXX_COMPILER__found_Debug /home/patryks/Workspace/STL/0x04_Algorytmy/search_algorithm.cpp || cmake_object_order_depends_target_found
+  DEP_FILE = CMakeFiles/found.dir/search_algorithm.cpp.o.d
   FLAGS = -g -std=gnu++20
-  OBJECT_DIR = CMakeFiles/Middle.dir
-  OBJECT_FILE_DIR = CMakeFiles/Middle.dir
-
-build CMakeFiles/Middle.dir/middle.cpp.o: CXX_COMPILER__Middle_Debug /home/patryks/Workspace/STL/0x03_Iteratory/01_middle/middle.cpp || cmake_object_order_depends_target_Middle
-  DEP_FILE = CMakeFiles/Middle.dir/middle.cpp.o.d
-  FLAGS = -g -std=gnu++20
-  OBJECT_DIR = CMakeFiles/Middle.dir
-  OBJECT_FILE_DIR = CMakeFiles/Middle.dir
-
-build CMakeFiles/Middle.dir/middle2.cpp.o: CXX_COMPILER__Middle_Debug /home/patryks/Workspace/STL/0x03_Iteratory/01_middle/middle2.cpp || cmake_object_order_depends_target_Middle
-  DEP_FILE = CMakeFiles/Middle.dir/middle2.cpp.o.d
-  FLAGS = -g -std=gnu++20
-  OBJECT_DIR = CMakeFiles/Middle.dir
-  OBJECT_FILE_DIR = CMakeFiles/Middle.dir
-
-build CMakeFiles/Middle.dir/printCollection.cpp.o: CXX_COMPILER__Middle_Debug /home/patryks/Workspace/STL/0x03_Iteratory/01_middle/printCollection.cpp || cmake_object_order_depends_target_Middle
-  DEP_FILE = CMakeFiles/Middle.dir/printCollection.cpp.o.d
-  FLAGS = -g -std=gnu++20
-  OBJECT_DIR = CMakeFiles/Middle.dir
-  OBJECT_FILE_DIR = CMakeFiles/Middle.dir
+  OBJECT_DIR = CMakeFiles/found.dir
+  OBJECT_FILE_DIR = CMakeFiles/found.dir
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target Middle
+# Link build statements for EXECUTABLE target found
 
 
 #############################################
-# Link the executable Middle
+# Link the executable found
 
-build Middle: CXX_EXECUTABLE_LINKER__Middle_Debug CMakeFiles/Middle.dir/main.cpp.o CMakeFiles/Middle.dir/middle.cpp.o CMakeFiles/Middle.dir/middle2.cpp.o CMakeFiles/Middle.dir/printCollection.cpp.o
+build found: CXX_EXECUTABLE_LINKER__found_Debug CMakeFiles/found.dir/search_algorithm.cpp.o
   FLAGS = -g
-  OBJECT_DIR = CMakeFiles/Middle.dir
+  OBJECT_DIR = CMakeFiles/found.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_FILE = Middle
-  TARGET_PDB = Middle.dbg
+  TARGET_FILE = found
+  TARGET_PDB = found.dbg
 
 
 #############################################
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/patryks/Workspace/STL/0x03_Iteratory/01_middle/build && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /home/patryks/Workspace/STL/0x04_Algorytmy/build && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -105,7 +87,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/patryks/Workspace/STL/0x03_Iteratory/01_middle/build && /usr/bin/cmake --regenerate-during-build -S/home/patryks/Workspace/STL/0x03_Iteratory/01_middle -B/home/patryks/Workspace/STL/0x03_Iteratory/01_middle/build
+  COMMAND = cd /home/patryks/Workspace/STL/0x04_Algorytmy/build && /usr/bin/cmake --regenerate-during-build -S/home/patryks/Workspace/STL/0x04_Algorytmy -B/home/patryks/Workspace/STL/0x04_Algorytmy/build
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -121,9 +103,9 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 
 #############################################
-# Folder: /home/patryks/Workspace/STL/0x03_Iteratory/01_middle/build
+# Folder: /home/patryks/Workspace/STL/0x04_Algorytmy/build
 
-build all: phony Middle
+build all: phony found
 
 # =============================================================================
 # Built-in targets

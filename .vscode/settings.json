@@ -62,5 +62,7 @@
         "typeinfo": "cpp",
         "variant": "cpp",
         "forward_list": "cpp"
-    }
+    },
+    "cmake.sourceDirectory": "/home/patryks/Workspace/STL/0x00_Podstawy_STL/01_array",
+    "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools"
 }

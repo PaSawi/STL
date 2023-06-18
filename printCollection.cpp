@@ -1,4 +1,4 @@
-//print collection
+//template print collection
 
 #include <iostream>
 

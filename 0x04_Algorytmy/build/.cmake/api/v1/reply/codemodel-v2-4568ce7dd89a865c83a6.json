@@ -6,10 +6,10 @@
 			[
 				{
 					"build" : ".",
-					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
 					"minimumCMakeVersion" : 
 					{
-						"string" : "3.11.0"
+						"string" : "3.11"
 					},
 					"projectIndex" : 0,
 					"source" : ".",
@@ -27,7 +27,7 @@
 					[
 						0
 					],
-					"name" : "Middle",
+					"name" : "found",
 					"targetIndexes" : 
 					[
 						0
@@ -38,9 +38,9 @@
 			[
 				{
 					"directoryIndex" : 0,
-					"id" : "Middle::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-Middle-Debug-bd0d11819e5ec98ba5be.json",
-					"name" : "Middle",
+					"id" : "found::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-found-Debug-ea8561eb4340375f04f5.json",
+					"name" : "found",
 					"projectIndex" : 0
 				}
 			]
@@ -49,12 +49,12 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "C:/Programming/GIT/workspace/STL/ex/0x06_iteratory/01_middle/build",
-		"source" : "C:/Programming/GIT/workspace/STL/ex/0x06_iteratory/01_middle"
+		"build" : "/home/patryks/Workspace/STL/0x04_Algorytmy/build",
+		"source" : "/home/patryks/Workspace/STL/0x04_Algorytmy"
 	},
 	"version" : 
 	{
 		"major" : 2,
-		"minor" : 5
+		"minor" : 3
 	}
 }
