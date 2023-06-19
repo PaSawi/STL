@@ -12,6 +12,7 @@ int main()
 
     // Remove all duplicates from v
     printCollection(v);
+    std::sort(v.begin(), v.end());
     v.erase(std::unique(begin(v), end(v)), end(v));
 
     // Write out all elements, using std::copy and std::ostream_iterator
