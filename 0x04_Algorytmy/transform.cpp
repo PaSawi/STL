@@ -13,9 +13,4 @@ int main(){
                    [](auto first, auto second){
                         return first + second;
                    });
-                   
-
-
-
-
 }
