@@ -2,6 +2,7 @@
 #include <iostream>
 #include <list>
 #include <vector>
+#include "printCollection.cpp"
 
 int main(){
     std::vector<int> vec {1,2,3,4,5,6,7,8};
