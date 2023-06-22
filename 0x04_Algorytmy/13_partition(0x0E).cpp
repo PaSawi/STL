@@ -7,9 +7,6 @@
 #include <iterator>
 #include <vector>
 
-
-using namespace std;
-
 int main()
 {
     auto is_even = [](auto i) { return i % 2 == 0; }; // predicate
@@ -22,7 +19,7 @@ int main()
     std::cout << std::is_partitioned(a4.begin(), a4.end(), is_even); // false!
 
     // pp
-    vector<int> v = { 8, 2, 6, 4, 5, 3, 7, 1, 9 };
+    std::vector<int> v = { 8, 2, 6, 4, 5, 3, 7, 1, 9 };
     auto it = std::partition(v.begin(), v.end(), is_even);
     std::cout << std::is_partitioned(v.begin(), v.end(), is_even); // true
     auto pp = std::partition_point(v.begin(), v.end(), is_even);
@@ -49,12 +46,12 @@ int main()
     printCollection(true_vector); // true_vector = {2, 4, 6, 8}
     printCollection(false_vector); // false_vector = {1, 3, 5, 7, 9}
 
-    // Wypisanie zawartości true_vector
+    // Writing out the contents true_vector
     std::copy(true_vector.begin(), true_vector.end(),
         std::ostream_iterator<int>(std::cout, " "));
     std::cout << std::endl;
 
-    // Wypisanie zawartości false_vector
+    // Writing out the contents false_vector
     std::copy(false_vector.begin(), false_vector.end(),
         std::ostream_iterator<int>(std::cout, " "));
     std::cout << std::endl;
