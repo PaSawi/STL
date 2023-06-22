@@ -1,3 +1,0 @@
-/home/patryks/Workspace/STL/0x04_Algorytmy/build/CMakeFiles/found.dir
-/home/patryks/Workspace/STL/0x04_Algorytmy/build/CMakeFiles/edit_cache.dir
-/home/patryks/Workspace/STL/0x04_Algorytmy/build/CMakeFiles/rebuild_cache.dir
