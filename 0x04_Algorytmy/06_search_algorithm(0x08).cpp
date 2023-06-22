@@ -1,4 +1,6 @@
-
+//std::find_if, std::copy_if 
+//std::search, std::search_n, std::adjacent_find
+//std::ostream_iterator, next(), empty()
 #include <algorithm>
 #include <array>
 #include <iostream>
@@ -9,7 +11,7 @@ int main()
 {
     std::vector<int> v = { 8, 2, 5, 3, 4, 4, 2, 7, 6, 6, 1, 8, 9 };
     
-    //2. Find all elements greater than 6 and list them
+    //Find all elements greater than 6 and list them
     auto it = std::find_if(begin(v), end(v), [](auto el) { return el > 6; });
     while (it != v.end()) {
         std::cout << *it << " ";
@@ -19,11 +21,11 @@ int main()
 
     std::copy_if   (v.begin(), 
                     v.end(), 
-                    std::ostream_iterator<int>(std::cout, " "),// write on screen 
+                    std::ostream_iterator<int>(std::cout, " "), 
                     [](auto el){ return el > 6; });
     std::cout << '\n';
 
-    //3. Find all elements equal to 2, 4, 6 or 8 and list them
+    //Find all elements equal to 2, 4, 6 or 8 and list them
     std::copy_if  (v.begin(), 
                         v.end(),
                         std::ostream_iterator<int>(std::cout, " "), 
@@ -32,7 +34,7 @@ int main()
                         });
     std::cout << '\n';
     
-    //4. Search the vector v for ranges {6, 6} and {7, 7}
+    //Search the vector v for ranges {6, 6} and {7, 7}
     std::array<int, 2> a = {6,6};
     it = std::search(v.begin(), v.end(), a.begin(), a.end());
     if ( it != v.end()) {
@@ -59,7 +61,7 @@ int main()
         }
     }
 
-    // 5. Use std::adjacent_find on the vector v
+    // Use std::adjacent_find on the vector v
     it = std::adjacent_find(v.begin(), v.end()); //search for repetition
     if ( it != v.end()) {
         std::cout << *it <<" ";
@@ -71,3 +73,12 @@ int main()
 
     return 0;
 }
+
+// std::find
+// std::find_if
+// std::find_first_of
+// std::find_if_not
+// std::find_end
+// std::search
+// std::search_n
+// std::adjacent_find

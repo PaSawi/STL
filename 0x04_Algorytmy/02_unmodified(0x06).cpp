@@ -1,3 +1,6 @@
+//std::count_if, std::any_of, std::all_of
+//std::ranges::any_of, all_of
+//std::boolalpha
 #include <algorithm>
 #include <iostream>
 #include <vector>
@@ -26,3 +29,8 @@ int main()
 }
 
 //std::boolalpha << std:: - displays TRUE and FALSE except 1 i 0
+
+// Checking conditions - std::all_of, std::any_of, std::none_of
+// Counting elements - std::count, std::count_if
+// Searching for elements - std::find_if, std::find_first_of, std::search, std::adjacent_find
+// Comparing - std::mismatch

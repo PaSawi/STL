@@ -1,3 +1,4 @@
+//std::transform
 #include <algorithm>
 #include <iostream>
 #include <list>
@@ -14,4 +15,5 @@ int main(){
                    [](auto first, auto second){
                         return first + second;
                    });
+     // vec = {11, 22, 33, 44, 55, 66, 77, 88}
 }

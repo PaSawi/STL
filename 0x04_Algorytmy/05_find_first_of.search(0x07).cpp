@@ -1,3 +1,5 @@
+//std::find_if, std::find_first_of
+//std::search
 #include <algorithm>
 #include <iostream>
 #include <vector>
@@ -22,7 +24,6 @@ int main(){
     auto it3 = std::search(begin(v),end(v),begin(z),end(z));  
     std::cout << check_out_of_range(it3) << '\n';
     
-    //std::adjacent()
     auto it4 = std::search(begin(v),end(v),begin(z),end(z));  
     std::cout << check_out_of_range(it4) << '\n';
 

@@ -1,3 +1,4 @@
+//std::shuffle, std::copy
 //Generating random sequences
 
 #include "printCollection.cpp"

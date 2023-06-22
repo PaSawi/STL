@@ -1,9 +1,11 @@
+//vector<std::pair<int, std::string>> v
+//std::transform, std::generate_n 
 
-#include "printCollection.cpp"
 #include <algorithm>
 #include <iostream>
 #include <string>
 #include <vector>
+#include "printCollection.cpp"
 
 
 int main()

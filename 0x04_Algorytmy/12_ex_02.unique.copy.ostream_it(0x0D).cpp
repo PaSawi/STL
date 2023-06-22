@@ -1,10 +1,14 @@
+//erase duplicates using std::unique
+//printing by std::copy with std::ostream_iterator
+//random device with mt19937
+//std::shuffle
+
 #include "printCollection.cpp"
 #include <algorithm>
 #include <iostream>
 #include <iterator>
 #include <random>
 #include <vector>
-
 
 int main()
 {
