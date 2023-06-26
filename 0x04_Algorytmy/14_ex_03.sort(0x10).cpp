@@ -12,9 +12,9 @@ struct Point {
 
 // Create a function to output the contents of container d
 template <typename Container>
-void print(Container c)
+void print(Container collection)
 {
-    for (const auto& el : c) {
+    for (const auto& el : collection) {
         std::cout << el.x << ", " << el.y << '\t';
     }
     std::cout << '\n';
