@@ -1,4 +1,6 @@
 a.exe
 build/
+output/
 .vscode/
 a.out
+c_cpp_properties.json
