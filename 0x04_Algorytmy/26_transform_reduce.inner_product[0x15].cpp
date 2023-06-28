@@ -7,18 +7,19 @@ int main()
     std::vector<int> a{0, 1, 2, 3, 4};
     std::vector<int> b{5, 4, 2, 3, 1};
 
-    int r1 = std::inner_product(a.begin(), a.end(), b.begin(), 0);
+    int r = std::transform_reduce(a.begin(), a.end(), b.begin(), 0);
+    int r1 = std::transform_reduce(a.begin(), a.end(), b.begin(), 0,
+                                   std::plus<>(), std::equal_to<>());
+    
+    int r2 = std::inner_product(a.begin(), a.end(), b.begin(), 0);
     // 0 x 5 + 1 x 4 + 2 x 2 + 3 x 3 + 4 x 1
     // r1 = 21
 
-    int r2 = std::inner_product(a.begin(), a.end(), b.begin(), 0,
+    int r3 = std::inner_product(a.begin(), a.end(), b.begin(), 0,
                                 std::plus<>(), std::equal_to<>());
     // (0 == 5) + (1 == 4) + (2 == 2) + (3 == 3) + (4 == 1)
     // r2 = 2
 
-    int r3 = std::transform_reduce(a.begin(), a.end(), b.begin(), 0);
-    int r4 = std::transform_reduce(a.begin(), a.end(), b.begin(), 0,
-                                   std::plus<>(), std::equal_to<>());
 
 
     std::vector<int> v {3,2,4};
