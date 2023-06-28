@@ -7,7 +7,7 @@
 int main(){
     std::vector<int> v = {10,22,33,44,55,88,33,55};
     std::vector<int> z = {88,33,55};
-    auto it = std::ranges::find_if(v, [](auto el) { return el > 10; });
+    auto it = std::ranges::find_if(v, [](auto el) { return el > 22; });
     //Very important. We should check if the iterator is in range or equal to end(), which means out of range
     auto check_out_of_range = [v] (auto it) { 
         if (it != v.end()) return *it;

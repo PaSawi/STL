@@ -26,10 +26,10 @@ int main()
     std::cout << '\n';
 
     //Find all elements equal to 2, 4, 6 or 8 and list them
-    std::copy_if  (v.begin(), 
-                        v.end(),
-                        std::ostream_iterator<int>(std::cout, " "), 
-                        [] ( auto el){
+    std::copy_if  ( v.begin(), 
+                    v.end(),
+                    std::ostream_iterator<int>(std::cout, " "), 
+                    [] ( auto el){
                             return el == 2 || el == 4 || el == 6 || el == 8;
                         });
     std::cout << '\n';
