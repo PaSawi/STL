@@ -1,25 +1,29 @@
-#include<algorithm>
-#include<vector>
-#include<list>
-#include<iostream>
-#include<iterator>
-#include<numeric>
-#include<execution>
+#include <algorithm>
+#include <execution>
+#include <iostream>
+#include <iterator>
+#include <list>
+#include <numeric>
+#include <vector>
 
-int main()
-{
-    std::vector<int> vec1 {1,2,3,4,5,6,7,8};
-    std::vector<int> vec2 {10,20,30,40,50,60,70,80};
-// 1. połączyć 2 kontenery naprzemiennie?
-    for(auto i = vec1.begin(); i != vec1.end() ; i++ ){
-        auto j = vec2.begin();
-        vec1.insert(j);
+int main() {
+    std::vector<int> vec1{1, 2, 3, 4, 5, 6, 7, 8};
+    std::vector<int> vec2{10, 20, 30, 40, 50, 60, 70, 80};
+    std::vector<int> result;
+    // 1. połączyć 2 kontenery naprzemiennie?
+    auto size = std::max(vec1.size(), vec2.size());
+    for( auto i = 0; i < size; ++i ) {
+        if (i < vec1.size())
+            result.push_back(vec1[i]);
+        if (i < vec2.size())
+            result.push_back(vec2[i]);
     }
-    
-    return 0;
+    std::cout <<'\n';
+    std::copy(result.begin(), result.end(), std::ostream_iterator<int>(std::cout, " "));
+    std::cout <<'\n';
+
+        return 0;
 }
-    
-    
 
 // Jaką złożoność ma std::sort()?
 // complexity is O(N·log(N)) comparisons
