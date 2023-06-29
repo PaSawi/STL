@@ -74,6 +74,7 @@ int main()
     std::cout << '\n';
 
     // 8. podzielić kontener na 2 zakresy, zawierające mniejsze i większe wartości niż 10?
+
     std::ostream_iterator<int> cout { std::cout, " " };
     std::vector<int> v4 { 4, 15, 4, 2, 10, 7, 12, 6, 6, 1, 60, 8, 9 };
     auto less_than_10 = [](auto num) { return num < 10; };
@@ -82,6 +83,14 @@ int main()
     std::ranges::copy(v4, cout);
     std::cout << '\n';
 
+    //nth_element
+    std::vector<int> vector { 4, 15, 4, 2, 10, 7, 12, 6, 6, 1, 60, 8, 9 };
+    auto iter = std::find(vector.begin(),vector.end(), 10);
+    std::ranges::nth_element(vector, iter);
+    std::cout << "nth-element relative to 10: ";
+    std::ranges::copy(vector, cout);
+    std::cout << '\n';
+    
     // partition_copy
     std::vector v5 = { 4, 15, 4, 2, 10, 7, 12, 6, 6, 1, 60, 8, 91, 2, 3, 4, 5, 6, 7, 8, 9 };
     std::vector<int> true_vector;
