@@ -20,5 +20,7 @@ int main(){
     std::cout << it4->first <<": " <<it4->second << "\n";
 }
 
+// count - returns the number of elements matching specific key
+
 
 

@@ -14,7 +14,7 @@ int main()
     std::cout << binary_search(begin(v), end(v), 8) << '\n'; // true
     std::cout << binary_search(begin(v), end(v), 9) << '\n'; // false
 
-// std::lower_bound, std::lower_bound zwraca iterator na pierwszy element NIE MNIEJSZY NIŻ podana wartość
+// std::lower_bound zwraca iterator na pierwszy element NIE MNIEJSZY NIŻ podana wartość
     //  find in subrange (as shown in image):
     auto i = lower_bound(begin(v) + 3, begin(v) + 7, 5);
     if (i != end(v)) { // true => found
@@ -26,7 +26,7 @@ int main()
         std::cout << *j << '\n'; // 2
     }
 
-//std::upper_bound,  std::upper_bound zwraca iterator na pierwszy element WIĘKSZY NIŻ podana wartość
+//std::upper_bound zwraca iterator na pierwszy element WIĘKSZY NIŻ podana wartość
     // find in subrange (as shown in image):
     auto p = upper_bound(begin(v)+3, begin(v)+7, 5);
     if (p != end(v)) {  // true => found
@@ -38,7 +38,7 @@ int main()
       std::cout << *q << '\n';  // 3
     }
 
-//std::equal_range,std::equal_range zwraca parę [lower_bound, upper_bound], 
+//std::equal_range zwraca parę [lower_bound, upper_bound], 
 //std::distance pomiędzy lower i upper to liczba znalezionych, równych sobie elementów
     std::vector<int> vec {1,1,2,3,4,5,5,5,6,6,7,7,8};
     // find in subrange (as shown in image):
