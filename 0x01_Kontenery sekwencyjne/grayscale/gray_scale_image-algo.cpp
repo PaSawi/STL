@@ -2,7 +2,7 @@
 #include <array>
 #include <iostream>
 #include <iterator>
-#include <ranges>
+//#include <ranges>
 #include <utility> //std::pair
 #include <vector>
 
@@ -13,35 +13,61 @@ std::vector<std::pair<uint8_t, uint8_t>> compressGrayscale(const std::array<std:
 {
     std::vector<std::pair<uint8_t, uint8_t>> vec_c;
     vec_c.reserve(width * height);
-    int counter = 0;
     auto last_color = bitmap[0][0];
-    for (const auto& row : bitmap) {
+    int counter = 0;
+
+    for (const auto& row : bitmap)
+    {      
         std::transform(row.begin(), row.end(), std::back_inserter(vec_c),
-            [&counter, row, &last_color](uint8_t value) mutable {
-                if (value == last_color) {
-                    counter++;
-                    return std::pair<uint8_t, uint8_t>(value, counter);
-                }
-                else {
-                    counter = 1; 
-                    last_color = value;
-                    return std::pair<uint8_t, uint8_t>(value, counter); 
-                }
-            });
+           [&counter, &last_color, &bitmap](uint8_t value) mutable {          
+               if (value == last_color) {
+                   counter++;
+               }
+               else { 
+                   last_color = value;
+                   counter = 1; 
+                   return std::pair<uint8_t, uint8_t>(last_color, counter); 
+               }
+               return std::pair<uint8_t, uint8_t>(last_color, counter); 
+           });       
+      
+         //vec_c.erase(unique(vec_c.begin(), vec_c.end(), 
+         //    [](const auto & pair1, const auto &pair2){    
+         //    
+         //    return pair1.first == pair2.first;
+         //})
+         //, vec_c.end());
+        
     }
     return vec_c;
-
-    /*   for (const auto& row : bitmap) {
-           std::transform(row.begin(), row.end(), std::back_inserter(vec_c),
-                          [](uint8_t value) {
-                              return std::pair<uint8_t, uint8_t>(value , 0);
-                          });
-       }
-
-       return vec_c;
-       */
 }
 
+std::vector<std::pair<uint8_t, uint8_t>> compressGrayscale2(const std::array<std::array<uint8_t, height>, width>& bitmap)
+{
+    std::vector<std::pair<uint8_t, uint8_t>> vec_c;
+    vec_c.reserve(width * height);
+    auto last_color = bitmap[0][0];
+    int counter = 0;
+
+    std::for_each(bitmap.begin(), bitmap.end(),
+        [&vec_c, &last_color, &counter](const auto& row) {
+            std::for_each(row.begin(), row.end(),
+                [&vec_c, &last_color, &counter](const auto& value) {
+                    if (value == last_color) {
+                        counter++;
+                    }
+                    else {
+                        vec_c.emplace_back(last_color, counter);
+                        last_color = value;
+                        counter = 1;
+                    }
+                });
+        });
+
+    vec_c.emplace_back(last_color, counter);  // Dodaj ostatnią parę do vec_c
+
+    return vec_c;
+}
 /*bitmap = { { { 0, 0, 0, 1, 1, 2, 3, 0, 0, 0 },
                      { 0, 0, 4, 4, 4, 1, 1, 1, 1, 1 },
                      { 2, 2, 2, 2, 2, 1, 2, 2, 2, 2 } } };*/
@@ -53,13 +79,30 @@ int main()
         bitmap = { { { 0, 0, 0, 1, 1, 2, 3, 0, 0, 0 },
             { 0, 0, 4, 4, 4, 1, 1, 1, 1, 1 },
             { 2, 2, 2, 2, 2, 1, 2, 2, 2, 2 } } };
-    std::vector<std::pair<uint8_t, uint8_t>> vec_c = compressGrayscale(bitmap);
-    std::ranges::for_each(vec_c, [](const std::pair<uint8_t, uint8_t>& p) {
+   
+    std::vector<std::pair<uint8_t, uint8_t>> vec_c = compressGrayscale2(bitmap);
+
+    // Sortuj wektor, aby elementy o tych samych wartościach znalazły się obok siebie
+    //std::sort(vec_c.begin(), vec_c.end());
+
+    // Usuń kolejne powtórzenia, zachowując pierwsze wystąpienie
+   // auto last = std::unique(vec_c.begin(), vec_c.end(), [](const auto& a, const auto& b) {
+   //     return a.first == b.first && a.second == b.second;
+   // });
+
+    // Wyświetl wynik
+   // for (auto it = vec_c.begin(); it != last; ++it) {
+    //    std::cout << "{" << it->first << ", " << it->second << "}, ";
+  // }
+ //   std::cout << std::endl;
+
+    std::for_each(begin(vec_c), end(vec_c), [](const std::pair<uint8_t, uint8_t>& p) {
         std::cout << "{" << static_cast<int>(p.first) << ", " << static_cast<int>(p.second) << "}, ";
     });
     std::cout << std::endl;
     return 0;
 }
+
 
 /*
 std::vector<std::pair<uint8_t, uint8_t>> compressGrayscale(const std::array<std::array<uint8_t, height>, width>& bitmap)
@@ -67,6 +110,7 @@ std::vector<std::pair<uint8_t, uint8_t>> compressGrayscale(const std::array<std:
     std::vector<std::pair<uint8_t, uint8_t>> vec_c;
     uint8_t last_color = bitmap[0][0];
     uint8_t count = 1;
+
     for (int row = 0; row < width; row++) {
         for (int col = 0; col < height; col++) {
             if (bitmap[row][col] == last_color) {
