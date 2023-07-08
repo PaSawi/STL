@@ -6,8 +6,8 @@
 #include <utility> //std::pair
 #include <vector>
 
-constexpr size_t width = 32;
-constexpr size_t height = 32;
+constexpr size_t width = 3;
+constexpr size_t height = 10;
 
 std::vector<std::pair<uint8_t, uint8_t>> compressGrayscale(const std::array<std::array<uint8_t, height>, width>& bitmap)
 {
@@ -48,20 +48,23 @@ std::vector<std::pair<uint8_t, uint8_t>> compressGrayscale2(const std::array<std
     vec_c.reserve(width * height);
     auto last_color = bitmap[0][0];
     int counter = 0;
+    int temp = 0;
 
     std::for_each(bitmap.begin(), bitmap.end(),
-        [&vec_c, &last_color, &counter](const auto& row) {
+        [&vec_c, &last_color, &counter, &temp](const auto& row) {
             std::for_each(row.begin(), row.end(),
-                [&vec_c, &last_color, &counter](const auto& value) {
-                    if (value == last_color) {
+                [&vec_c, &last_color, &counter, &temp](const auto& value) {
+                    if (value == last_color && temp == 0) {
                         counter++;
                     }
                     else {
                         vec_c.emplace_back(last_color, counter);
                         last_color = value;
                         counter = 1;
+                        temp = 0;
                     }
                 });
+                temp = 1;
         });
 
     vec_c.emplace_back(last_color, counter);  // Dodaj ostatnią parę do vec_c
